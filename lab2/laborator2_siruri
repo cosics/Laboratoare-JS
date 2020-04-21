@@ -1,0 +1,20 @@
+//1.
+
+const friends = ["Radu", "Vlad"];
+console.log(friends);
+
+//2.
+
+const updatedFriends = [...friends, "Janos"]
+console.log(updatedFriends);
+
+//3.
+
+const friendsLength = updatedFriends.map(item => item.length);
+console.log(friendsLength);
+
+//4.
+const _ = require('underscore');
+shorterFriends = _.groupBy(updatedFriends, 'length');
+
+console.log(shorterFriends);
