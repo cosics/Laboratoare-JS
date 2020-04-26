@@ -46,7 +46,7 @@ const Proiect3 = new Proiecte(
 );
 console.log(instances);
 
-//Varianta clasica, fara compunere de functii
+//Varianta clasica, fara compunere de functii, FOREACH
 
 instances
   .filter((item) => item.isActive)
@@ -58,4 +58,16 @@ instances
     console.log(rest);
     //const { name, details } = item;
     //console.log(name + " -> " + details);
+  });
+
+//Varianta clasica, fara compunere de functii, MAP
+
+instances
+  .filter((item) => item.isActive)
+  .sort(function (a, b) {
+    return new Date(a.lastUpdate) - new Date(b.lastUpdate);
+  })
+  .map((item) => {
+    const { name, details } = item;
+    console.log(name + " -> " + details);
   });
