@@ -129,7 +129,7 @@ let instances = [];
 class Proiecte {
   constructor(name, createdAt, lastUpdate, isActive, details) {
     this.name = name;
-    this.createdAt = createdAt;
+    this.createdAt = new Date(createdAt);
     this.lastUpdate = new Date(lastUpdate);
     this.isActive = isActive;
     this.details = details;
@@ -151,21 +151,28 @@ const Proiect1 = new Proiecte(
   "2 Martie 2020",
   "2 05 2019",
   true,
-  "proiect javascript"
+  "Proiect Javascript"
 );
 const Proiect2 = new Proiecte(
   "Python",
   "2 Martie 2020",
   "3 01 2018",
   true,
-  "proiect python"
+  "Proiect Python"
 );
 const Proiect3 = new Proiecte(
   "C++",
   "2 Martie 2020",
   "3 03 2020",
   false,
-  "proiect c++"
+  "Proiect C++"
+);
+const Proiect4 = new Proiecte(
+  "Java",
+  "2 Martie 2020",
+  "3 01 2017",
+  true,
+  "Proiect Java"
 );
 console.log(instances);
 
