@@ -1,24 +1,15 @@
-/*const getMatrix = (len) =>
-  [...Array(len)].map((x) =>
-    [...Array(len)].map((b) => Math.round(Math.random()))
-  );
-
-let res = getMatrix(5);
-console.log(res); 
-
-
-const getMatrix = (l, w) =>
-  [...Array(l)].map((x) => [...Array(w)].map((b) => Math.round(Math.random())));
-
-let res = getMatrix(2, 3);
-console.log(res); */
+// Tic Tac Toe matrix, populata cu valori random X si 0
 
 const array = ["X", 0];
+
+//Matrice patratica marime n
 
 const getMatrix = (len) =>
   [...Array(len)].map((x) =>
     [...Array(len)].map((b) => array[Math.floor(Math.random() * array.length)])
   );
+
+  //Matrice marime n x m 
 
 const getMatrix2 = (l, w) =>
   [...Array(l)].map((x) =>
