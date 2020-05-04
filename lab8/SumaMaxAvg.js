@@ -6,7 +6,7 @@ const suma = (arr) => (arr.length === 0 ? 0 : arr[0] + suma(arr.slice(1)));
 console.log(suma([1, 2, 3, 4, 5]));
 console.log(suma(_.range(10)));
 
-//Recursiv - maximul elementelor unui sir 1
+//Recursiv - maximul elementelor unui sir simplu
 
 function max1(arr) {
   if (arr.length === 1) {
@@ -17,7 +17,7 @@ function max1(arr) {
 }
 console.log(max1([1, 2, 9, 4, 5, 6, 7]));
 
-//Recursiv - maximul elementelor unui sir 2 - array in array
+//Recursiv - maximul elementelor unui sir  - array in array
 
 const max2 = (arr) => {
   var max = -Infinity;

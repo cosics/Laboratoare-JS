@@ -1,4 +1,4 @@
-// Tic Tac Toe matrix, populata cu valori random X si 0
+// Tic Tac Toe matrix, populata cu valori random X si 0 la fiecare afisare in consola
 
 const array = ["X", 0];
 
@@ -9,7 +9,7 @@ const getMatrix = (len) =>
     [...Array(len)].map((b) => array[Math.floor(Math.random() * array.length)])
   );
 
-  //Matrice marime n x m 
+//Matrice marime n x m
 
 const getMatrix2 = (l, w) =>
   [...Array(l)].map((x) =>
